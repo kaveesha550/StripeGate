@@ -3,7 +3,6 @@
 import { useInView } from "react-intersection-observer"
 import { cn } from "@/lib/utils"
 import { Check } from "lucide-react"
-import Image from "next/image"
 
 const features = [
   "100% Legal and compliant Stripe account setup",
@@ -52,13 +51,7 @@ export default function WhyChooseUs() {
             )}
           >
             <div className="relative rounded-lg overflow-hidden shadow-xl">
-              <Image
-                src="https://placehold.co/500x400/685fff/FFFFFF?text=Global+Payment+Support+Team"
-                alt="Global payment support team"
-                width={500}
-                height={400}
-                className="w-full h-auto"
-              />
+              <img src="/images/why-choose-us.png" alt="Global payment support team" className="w-full h-auto" />
               <div className="absolute -top-6 -right-6 bg-white p-4 rounded-lg shadow-lg w-48 md:w-64">
                 <div className="flex items-start gap-2 mb-2">
                   <div className="w-8 h-8 bg-primary rounded-full flex-shrink-0"></div>

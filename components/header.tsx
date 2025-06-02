@@ -5,12 +5,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { useRouter, usePathname } from "next/navigation"
-import Logo from "@/components/logo"
 
 export default function Header() {
-  const router = useRouter()
-  const pathname = usePathname()
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -24,21 +20,15 @@ export default function Header() {
   }, [])
 
   const handleNavigation = (sectionId: string) => {
-    // If on homepage, scroll to section
-    if (pathname === "/") {
-      if (sectionId === "top") {
-        window.scrollTo({ top: 0, behavior: "smooth" })
-      } else {
-        const element = document.getElementById(sectionId)
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" })
-        }
-      }
-      setIsMobileMenuOpen(false)
+    if (sectionId === "top") {
+      window.scrollTo({ top: 0, behavior: "smooth" })
     } else {
-      // If on another page, navigate to homepage with hash
-      router.push(sectionId === "top" ? "/" : `/#${sectionId}`)
+      const element = document.getElementById(sectionId)
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" })
+      }
     }
+    setIsMobileMenuOpen(false)
   }
 
   return (
@@ -49,8 +39,8 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <Link href="/" className="text-white">
-          <Logo variant="white" size="md" />
+        <Link href="/" className="text-white text-2xl font-bold">
+          StripeGate
         </Link>
 
         {/* Desktop Navigation */}

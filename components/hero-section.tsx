@@ -1,24 +1,13 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { useRouter, usePathname } from "next/navigation"
-import Image from "next/image"
 import { ArrowRight, CheckCircle } from "lucide-react"
 
 export default function HeroSection() {
-  const router = useRouter()
-  const pathname = usePathname()
-
   const handleGetStarted = () => {
-    // If on homepage, scroll to services section
-    if (pathname === "/") {
-      const servicesSection = document.getElementById("services")
-      if (servicesSection) {
-        servicesSection.scrollIntoView({ behavior: "smooth" })
-      }
-    } else {
-      // If on another page, navigate to homepage with services hash
-      router.push("/#services")
+    const servicesSection = document.getElementById("services")
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: "smooth" })
     }
   }
 
@@ -62,7 +51,12 @@ export default function HeroSection() {
               <Button
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary/5 text-lg px-8 py-6 rounded-lg"
-                onClick={() => router.push("/#contact")}
+                onClick={() => {
+                  const contactSection = document.getElementById("contact")
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: "smooth" })
+                  }
+                }}
               >
                 Contact Us
               </Button>
@@ -99,13 +93,10 @@ export default function HeroSection() {
               </div>
 
               <div className="pt-8 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/stripe-dashboard-hero.png"
+                <img
+                  src="https://www.thinkific.com/wp-content/uploads/2024/05/Stripe-Checkout-Page-and-Dashboard-1024x626.png"
                   alt="Stripe dashboard interface showing payment processing and checkout"
-                  width={600}
-                  height={367}
                   className="w-full h-auto object-cover"
-                  priority
                 />
               </div>
 
@@ -140,7 +131,7 @@ export default function HeroSection() {
             {/* Pricing indicator */}
             <div className="absolute -bottom-4 right-10 bg-gradient-to-r from-primary to-purple-600 text-white px-6 py-3 rounded-lg shadow-lg">
               <p className="text-sm font-medium">Starting at</p>
-              <p className="text-2xl font-bold">$89.99</p>
+              <p className="text-2xl font-bold">$39.99</p>
             </div>
           </div>
         </div>
