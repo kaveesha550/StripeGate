@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Send, Mail, Clock, MessageSquare, Shield, Award, Star, Users } from "lucide-react"
+import { trackFormSubmission, trackButtonClick } from "@/lib/analytics"
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -22,12 +23,20 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+
+    // Track form submission
+    trackFormSubmission("Contact Form")
+
     // Handle form submission logic here
     console.log("Form submitted:", formData)
     // Reset form
     setFormData({ name: "", email: "", message: "" })
     // Show success message
     alert("Message sent successfully! We'll get back to you soon.")
+  }
+
+  const handleContactSupport = () => {
+    trackButtonClick("Contact Support Team", "Contact Section")
   }
 
   return (
@@ -259,7 +268,12 @@ export default function ContactSection() {
                   <p className="text-sm text-gray-600 mb-3">
                     If you're having trouble with your payment or setup, our support team is here to help.
                   </p>
-                  <Button variant="outline" size="sm" className="w-full border-primary text-primary hover:bg-primary/5">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="w-full border-primary text-primary hover:bg-primary/5"
+                    onClick={handleContactSupport}
+                  >
                     Contact Support Team
                   </Button>
                 </div>

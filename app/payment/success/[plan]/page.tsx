@@ -1,7 +1,11 @@
+"use client"
+
+import { useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle } from "lucide-react"
 import Link from "next/link"
+import { trackConversion } from "@/lib/analytics"
 
 interface SuccessPageProps {
   params: {
@@ -16,16 +20,23 @@ export default function SuccessPage({ params }: SuccessPageProps) {
     personal: {
       title: "Stripe Personal Account Setup",
       price: "$39.99",
+      value: 39.99,
       deliveryTime: "3 days",
     },
     business: {
       title: "Stripe Business Account Setup",
       price: "$169.99",
+      value: 169.99,
       deliveryTime: "5 days",
     },
   }
 
   const details = plan === "business" ? planDetails.business : planDetails.personal
+
+  useEffect(() => {
+    // Track conversion when success page loads
+    trackConversion(plan, details.value)
+  }, [plan, details.value])
 
   return (
     <main className="min-h-screen pt-32 pb-16 bg-gray-50">

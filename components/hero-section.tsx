@@ -2,12 +2,22 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle } from "lucide-react"
+import { trackButtonClick } from "@/lib/analytics"
 
 export default function HeroSection() {
   const handleGetStarted = () => {
+    trackButtonClick("Get Started", "Hero Section")
     const servicesSection = document.getElementById("services")
     if (servicesSection) {
       servicesSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
+  const handleContactUs = () => {
+    trackButtonClick("Contact Us", "Hero Section")
+    const contactSection = document.getElementById("contact")
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" })
     }
   }
 
@@ -51,12 +61,7 @@ export default function HeroSection() {
               <Button
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary/5 text-lg px-8 py-6 rounded-lg"
-                onClick={() => {
-                  const contactSection = document.getElementById("contact")
-                  if (contactSection) {
-                    contactSection.scrollIntoView({ behavior: "smooth" })
-                  }
-                }}
+                onClick={handleContactUs}
               >
                 Contact Us
               </Button>
