@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "StripeGate - Accept Payments Worldwide",
   description:
     "Unlock Stripe payments in non-supported countries. Process global payments legally and securely through our compliant payment gateway solution.",
+  icons: {
+    icon: "/favicon.ico",
+  },
     generator: 'v0.dev'
 }
 
@@ -22,6 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+
         {/* Google Analytics */}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-BBJFR5PZ48" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
