@@ -15,7 +15,12 @@ export default function Footer() {
               Setting up Stripe accounts for businesses in Stripe-unsupported countries.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link
+                href="https://www.facebook.com/share/1DeEdXERjk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <Facebook size={20} />
               </Link>
               <Link href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -89,22 +94,22 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/terms" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/legal/terms" className="text-gray-400 hover:text-white transition-colors">
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/legal/privacy" className="text-gray-400 hover:text-white transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/cookie-policy" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/legal/cookies" className="text-gray-400 hover:text-white transition-colors">
                   Cookie Policy
                 </Link>
               </li>
               <li>
-                <Link href="/compliance" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/legal/compliance" className="text-gray-400 hover:text-white transition-colors">
                   Compliance
                 </Link>
               </li>
