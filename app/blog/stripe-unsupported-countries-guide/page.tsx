@@ -325,7 +325,7 @@ export default function StripeUnsupportedCountriesGuide() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                   <Card>
                     <CardContent className="p-6">
-                      <h3 className="text-xl font-bold mb-4">Personal Account Package - $39.99</h3>
+                      <h3 className="text-xl font-bold mb-4">Individual Account Package - $19.99</h3>
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
                           <Check className="h-4 w-4 text-green-500" />
@@ -349,7 +349,7 @@ export default function StripeUnsupportedCountriesGuide() {
 
                   <Card>
                     <CardContent className="p-6">
-                      <h3 className="text-xl font-bold mb-4">Business Account Package - $169.99</h3>
+                      <h3 className="text-xl font-bold mb-4">Business Account Package - $49.99</h3>
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
                           <Check className="h-4 w-4 text-green-500" />
@@ -383,7 +383,7 @@ export default function StripeUnsupportedCountriesGuide() {
                     <div>
                       <h3 className="text-xl font-bold mb-2">Choose Your Package</h3>
                       <p className="text-gray-700">
-                        Select between Personal ($39.99) or Business ($169.99) account setup based on your needs.
+                        Select between Individual ($19.99) or Business ($49.99) account setup based on your needs.
                       </p>
                     </div>
                   </div>
@@ -442,15 +442,15 @@ export default function StripeUnsupportedCountriesGuide() {
                     <thead>
                       <tr className="bg-gray-50">
                         <th className="border border-gray-300 p-3 text-left">Cost Type</th>
-                        <th className="border border-gray-300 p-3 text-center">Personal</th>
+                        <th className="border border-gray-300 p-3 text-center">Individual</th>
                         <th className="border border-gray-300 p-3 text-center">Business</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td className="border border-gray-300 p-3">Setup Fee (One-time)</td>
-                        <td className="border border-gray-300 p-3 text-center">$39.99</td>
-                        <td className="border border-gray-300 p-3 text-center">$169.99</td>
+                        <td className="border border-gray-300 p-3 text-center">$19.99</td>
+                        <td className="border border-gray-300 p-3 text-center">$49.99</td>
                       </tr>
                       <tr className="bg-gray-50">
                         <td className="border border-gray-300 p-3">Monthly Fees</td>
@@ -509,7 +509,7 @@ export default function StripeUnsupportedCountriesGuide() {
                   <div>
                     <h3 className="text-xl font-bold mb-2">How long does setup take?</h3>
                     <p className="text-gray-700">
-                      Personal accounts take 3 days, business accounts take 5 days from payment confirmation.
+                      Individual accounts take 3 days, business accounts take 5 days from payment confirmation.
                     </p>
                   </div>
                   <div>

@@ -5,7 +5,7 @@ import { Check, Building, CreditCard, Globe, Shield, Star } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Business Stripe Account Setup - $169.99 | StripeGate",
+  title: "Business Stripe Account Setup - $49.99 | StripeGate",
   description:
     "Complete business Stripe account setup with legal USA company registration, EIN number, business bank accounts, and more. 5-day delivery with lifetime support.",
   keywords:
@@ -56,13 +56,13 @@ export default function BusinessAccountPage() {
   ]
 
   const comparison = [
-    { feature: "Stripe Account", personal: "Personal", business: "Business" },
-    { feature: "Legal Entity", personal: "Individual", business: "USA Company" },
-    { feature: "Bank Accounts", personal: "Payoneer Only", business: "Payoneer + Mercury + Wise" },
-    { feature: "Business Address", personal: "Personal Address", business: "Business Address" },
-    { feature: "EIN Number", personal: "✓", business: "✓" },
-    { feature: "Setup Time", personal: "3 days", business: "5 days" },
-    { feature: "Price", personal: "$39.99", business: "$169.99" },
+    { feature: "Stripe Account", individual: "Individual", business: "Business" },
+    { feature: "Legal Entity", individual: "Individual", business: "USA Company" },
+    { feature: "Bank Accounts", individual: "Payoneer Only", business: "Payoneer + Mercury + Wise" },
+    { feature: "Business Address", individual: "Personal Address", business: "Business Address" },
+    { feature: "EIN Number", individual: "✓", business: "✓" },
+    { feature: "Setup Time", individual: "3 days", business: "5 days" },
+    { feature: "Price", individual: "$19.99", business: "$49.99" },
   ]
 
   return (
@@ -78,7 +78,7 @@ export default function BusinessAccountPage() {
               Complete business solution with legal company registration, business banking, and full Stripe integration
             </p>
             <div className="flex items-center justify-center gap-4 mb-8">
-              <span className="text-3xl font-bold text-primary">$169.99</span>
+              <span className="text-3xl font-bold text-primary">$49.99</span>
               <span className="text-gray-600">One-time payment</span>
               <div className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Best Value</div>
             </div>
@@ -156,13 +156,13 @@ export default function BusinessAccountPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">Personal vs Business Comparison</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Individual vs Business Comparison</h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse border border-gray-300">
                 <thead>
                   <tr className="bg-gray-50">
                     <th className="border border-gray-300 p-4 text-left">Feature</th>
-                    <th className="border border-gray-300 p-4 text-center">Personal Account</th>
+                    <th className="border border-gray-300 p-4 text-center">Individual Account</th>
                     <th className="border border-gray-300 p-4 text-center">Business Account</th>
                   </tr>
                 </thead>
@@ -170,7 +170,7 @@ export default function BusinessAccountPage() {
                   {comparison.map((row, index) => (
                     <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                       <td className="border border-gray-300 p-4 font-medium">{row.feature}</td>
-                      <td className="border border-gray-300 p-4 text-center">{row.personal}</td>
+                      <td className="border border-gray-300 p-4 text-center">{row.individual}</td>
                       <td className="border border-gray-300 p-4 text-center font-medium text-primary">
                         {row.business}
                       </td>
@@ -193,7 +193,7 @@ export default function BusinessAccountPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/checkout/business">
                 <Button className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-6">
-                  Order Now - $169.99
+                  Order Now - $49.99
                 </Button>
               </Link>
               <Link href="/#contact">

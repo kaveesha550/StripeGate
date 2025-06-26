@@ -79,7 +79,7 @@ function PricingPlan({ title, price, features, isPopular = false, delay, planTyp
 }
 
 export default function PricingPlans() {
-  const personalFeatures = [
+  const individualFeatures = [
     { text: "Full verified USA Stripe account" },
     { text: "EIN Number & Verification Letter" },
     { text: "Payoneer Account" },
@@ -107,16 +107,16 @@ export default function PricingPlans() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
           <PricingPlan
-            title="Stripe Personal Account Setup"
-            price="$39.99"
-            features={personalFeatures}
+            title="Stripe Individual Account Setup"
+            price="$19.99"
+            features={individualFeatures}
             delay={0}
-            planType="personal"
+            planType="individual"
           />
 
           <PricingPlan
             title="Stripe Business Account Setup"
-            price="$169.99"
+            price="$49.99"
             features={businessFeatures}
             isPopular={true}
             delay={200}

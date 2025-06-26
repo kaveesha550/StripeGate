@@ -99,9 +99,14 @@ export default function HeroSection() {
 
               <div className="pt-8 rounded-lg overflow-hidden">
                 <img
-                  src="https://www.thinkific.com/wp-content/uploads/2024/05/Stripe-Checkout-Page-and-Dashboard-1024x626.png"
-                  alt="Stripe dashboard interface showing payment processing and checkout"
+                  src="/images/stripe-checkout-dashboard.png"
+                  alt="Stripe checkout page and analytics dashboard showing payment processing, revenue tracking, and business metrics"
                   className="w-full h-auto object-cover"
+                  loading="eager"
+                  onError={(e) => {
+                    // Fallback to a placeholder if image fails to load
+                    e.currentTarget.src = "/placeholder.svg?height=400&width=600&text=Stripe+Dashboard"
+                  }}
                 />
               </div>
 
@@ -136,7 +141,7 @@ export default function HeroSection() {
             {/* Pricing indicator */}
             <div className="absolute -bottom-4 right-10 bg-gradient-to-r from-primary to-purple-600 text-white px-6 py-3 rounded-lg shadow-lg">
               <p className="text-sm font-medium">Starting at</p>
-              <p className="text-2xl font-bold">$39.99</p>
+              <p className="text-2xl font-bold">$19.99</p>
             </div>
           </div>
         </div>

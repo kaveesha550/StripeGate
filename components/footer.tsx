@@ -39,8 +39,8 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services/personal-account" className="text-gray-400 hover:text-white transition-colors">
-                  Personal Stripe Account
+                <Link href="/services/individual-account" className="text-gray-400 hover:text-white transition-colors">
+                  Individual Stripe Account
                 </Link>
               </li>
               <li>

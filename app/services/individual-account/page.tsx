@@ -5,20 +5,20 @@ import { Check, CreditCard, Shield, Clock, Users } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Personal Stripe Account Setup - $39.99 | StripeGate",
+  title: "Individual Stripe Account Setup - $19.99 | StripeGate",
   description:
-    "Get your personal Stripe account set up in 3 days for just $39.99. Includes EIN number, Payoneer account, USA address & phone number. Perfect for freelancers and individual businesses.",
+    "Get your individual Stripe account set up in 3 days for just $19.99. Includes EIN number, Payoneer account, USA address & phone number. Perfect for freelancers and individual businesses.",
   keywords:
-    "personal stripe account, stripe setup, freelancer payments, individual stripe account, stripe for non-supported countries",
+    "individual stripe account, stripe setup, freelancer payments, individual stripe account, stripe for non-supported countries",
   openGraph: {
-    title: "Personal Stripe Account Setup - Accept Global Payments",
+    title: "Individual Stripe Account Setup - Accept Global Payments",
     description:
       "Professional Stripe account setup for individuals and freelancers. Start accepting international payments in just 3 days.",
     type: "website",
   },
 }
 
-export default function PersonalAccountPage() {
+export default function IndividualAccountPage() {
   const features = [
     "Full verified USA Stripe account",
     "EIN Number & Verification Letter",
@@ -58,15 +58,15 @@ export default function PersonalAccountPage() {
       <section className="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Personal Stripe Account Setup</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Individual Stripe Account Setup</h1>
             <p className="text-xl text-gray-700 mb-8">
               Perfect for freelancers, consultants, and individual businesses who need to accept global payments
             </p>
             <div className="flex items-center justify-center gap-4 mb-8">
-              <span className="text-3xl font-bold text-primary">$39.99</span>
+              <span className="text-3xl font-bold text-primary">$19.99</span>
               <span className="text-gray-600">One-time payment</span>
             </div>
-            <Link href="/checkout/personal">
+            <Link href="/checkout/individual">
               <Button className="bg-gradient-to-r from-primary to-purple-600 text-white text-lg px-8 py-6">
                 Get Started Now
               </Button>
@@ -110,7 +110,7 @@ export default function PersonalAccountPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">Why Choose Our Personal Account Setup</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Why Choose Our Individual Account Setup</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {benefits.map((benefit, index) => (
                 <Card key={index} className="text-center">
@@ -136,9 +136,9 @@ export default function PersonalAccountPage() {
               Join thousands of satisfied customers who are now processing payments worldwide
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/checkout/personal">
+              <Link href="/checkout/individual">
                 <Button className="bg-gradient-to-r from-primary to-purple-600 text-white text-lg px-8 py-6">
-                  Order Now - $39.99
+                  Order Now - $19.99
                 </Button>
               </Link>
               <Link href="/#contact">

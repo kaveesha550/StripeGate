@@ -25,9 +25,9 @@ export default function CheckoutPage({ params }: CheckoutPageProps) {
   })
 
   const planDetails = {
-    personal: {
-      title: "Stripe Personal Account Setup",
-      price: "$39.99",
+    individual: {
+      title: "Stripe Individual Account Setup",
+      price: "$19.99",
       features: [
         "Full verified USA Stripe account",
         "EIN Number & Verification Letter",
@@ -39,7 +39,7 @@ export default function CheckoutPage({ params }: CheckoutPageProps) {
     },
     business: {
       title: "Stripe Business Account Setup",
-      price: "$169.99",
+      price: "$49.99",
       features: [
         "Full verified USA Business Stripe account",
         "Legal company registration in the USA",
@@ -54,7 +54,7 @@ export default function CheckoutPage({ params }: CheckoutPageProps) {
     },
   }
 
-  const details = plan === "business" ? planDetails.business : planDetails.personal
+  const details = plan === "business" ? planDetails.business : planDetails.individual
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target

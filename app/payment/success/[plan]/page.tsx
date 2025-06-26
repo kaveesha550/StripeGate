@@ -17,21 +17,21 @@ export default function SuccessPage({ params }: SuccessPageProps) {
   const plan = params.plan
 
   const planDetails = {
-    personal: {
-      title: "Stripe Personal Account Setup",
-      price: "$39.99",
-      value: 39.99,
+    individual: {
+      title: "Stripe Individual Account Setup",
+      price: "$19.99",
+      value: 19.99,
       deliveryTime: "3 days",
     },
     business: {
       title: "Stripe Business Account Setup",
-      price: "$169.99",
-      value: 169.99,
+      price: "$49.99",
+      value: 49.99,
       deliveryTime: "5 days",
     },
   }
 
-  const details = plan === "business" ? planDetails.business : planDetails.personal
+  const details = plan === "business" ? planDetails.business : planDetails.individual
 
   useEffect(() => {
     // Track conversion when success page loads

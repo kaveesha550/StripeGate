@@ -43,17 +43,17 @@ export default function VerificationPage({ params }: VerificationPageProps) {
   const [shareholders, setShareholders] = useState<ShareholderInfo[]>([])
 
   const planDetails = {
-    personal: {
-      title: "Stripe Personal Account Setup",
-      price: "$39.99",
+    individual: {
+      title: "Stripe Individual Account Setup",
+      price: "$19.99",
     },
     business: {
       title: "Stripe Business Account Setup",
-      price: "$169.99",
+      price: "$49.99",
     },
   }
 
-  const details = plan === "business" ? planDetails.business : planDetails.personal
+  const details = plan === "business" ? planDetails.business : planDetails.individual
   const isBusinessPlan = plan === "business"
 
   useEffect(() => {
