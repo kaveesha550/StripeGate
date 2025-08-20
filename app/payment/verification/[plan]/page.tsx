@@ -45,11 +45,11 @@ export default function VerificationPage({ params }: VerificationPageProps) {
   const planDetails = {
     individual: {
       title: "Stripe Individual Account Setup",
-      price: "$19.99",
+      price: "$39.99",
     },
     business: {
       title: "Stripe Business Account Setup",
-      price: "$49.99",
+      price: "$119.99",
     },
   }
 

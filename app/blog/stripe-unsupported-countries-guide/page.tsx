@@ -325,7 +325,7 @@ export default function StripeUnsupportedCountriesGuide() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                   <Card>
                     <CardContent className="p-6">
-                      <h3 className="text-xl font-bold mb-4">Individual Account Package - $19.99</h3>
+                      <h3 className="text-xl font-bold mb-4">Individual Account Package - $39.99</h3>
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
                           <Check className="h-4 w-4 text-green-500" />
@@ -349,7 +349,7 @@ export default function StripeUnsupportedCountriesGuide() {
 
                   <Card>
                     <CardContent className="p-6">
-                      <h3 className="text-xl font-bold mb-4">Business Account Package - $49.99</h3>
+                      <h3 className="text-xl font-bold mb-4">Business Account Package - $119.99</h3>
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
                           <Check className="h-4 w-4 text-green-500" />
@@ -383,7 +383,7 @@ export default function StripeUnsupportedCountriesGuide() {
                     <div>
                       <h3 className="text-xl font-bold mb-2">Choose Your Package</h3>
                       <p className="text-gray-700">
-                        Select between Individual ($19.99) or Business ($49.99) account setup based on your needs.
+                        Select between Individual ($39.99) or Business ($119.99) account setup based on your needs.
                       </p>
                     </div>
                   </div>
@@ -449,8 +449,8 @@ export default function StripeUnsupportedCountriesGuide() {
                     <tbody>
                       <tr>
                         <td className="border border-gray-300 p-3">Setup Fee (One-time)</td>
-                        <td className="border border-gray-300 p-3 text-center">$19.99</td>
-                        <td className="border border-gray-300 p-3 text-center">$49.99</td>
+                        <td className="border border-gray-300 p-3 text-center">$39.99</td>
+                        <td className="border border-gray-300 p-3 text-center">$119.99</td>
                       </tr>
                       <tr className="bg-gray-50">
                         <td className="border border-gray-300 p-3">Monthly Fees</td>
@@ -546,7 +546,7 @@ export default function StripeUnsupportedCountriesGuide() {
                   <Link href="/#contact">
                     <Button
                       variant="outline"
-                      className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6"
+                      className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6 bg-transparent"
                     >
                       Get Free Consultation
                     </Button>

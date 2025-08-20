@@ -108,7 +108,7 @@ export default function PricingPlans() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
           <PricingPlan
             title="Stripe Individual Account Setup"
-            price="$19.99"
+            price="$39.99"
             features={individualFeatures}
             delay={0}
             planType="individual"
@@ -116,7 +116,7 @@ export default function PricingPlans() {
 
           <PricingPlan
             title="Stripe Business Account Setup"
-            price="$49.99"
+            price="$119.99"
             features={businessFeatures}
             isPopular={true}
             delay={200}

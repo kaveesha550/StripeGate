@@ -35,7 +35,7 @@ const faqs: FaqItem[] = [
   {
     question: "Are there any monthly fees?",
     answer:
-      "No, there are no monthly fees. You pay a one-time setup fee ($39.99 for personal, $169.99 for business), and then only Stripe's standard transaction fees apply (typically 2.9% + $0.30 per successful charge).",
+      "No, there are no monthly fees. You pay a one-time setup fee ($39.99 for individual, $119.99 for business), and then only Stripe's standard transaction fees apply (typically 2.9% + $0.30 per successful charge).",
   },
 ]
 

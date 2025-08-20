@@ -60,7 +60,7 @@ export default function HeroSection() {
 
               <Button
                 variant="outline"
-                className="border-primary text-primary hover:bg-primary/5 text-lg px-8 py-6 rounded-lg"
+                className="border-primary text-primary hover:bg-primary/5 text-lg px-8 py-6 rounded-lg bg-transparent"
                 onClick={handleContactUs}
               >
                 Contact Us
@@ -141,7 +141,7 @@ export default function HeroSection() {
             {/* Pricing indicator */}
             <div className="absolute -bottom-4 right-10 bg-gradient-to-r from-primary to-purple-600 text-white px-6 py-3 rounded-lg shadow-lg">
               <p className="text-sm font-medium">Starting at</p>
-              <p className="text-2xl font-bold">$19.99</p>
+              <p className="text-2xl font-bold">$39.99</p>
             </div>
           </div>
         </div>

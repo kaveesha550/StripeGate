@@ -28,7 +28,7 @@ export default function CardPaymentPage({ params }: CardPaymentPageProps) {
     },
     business: {
       title: "Stripe Business Account Setup",
-      price: "$169.99",
+      price: "$119.99",
     },
   }
 

@@ -27,7 +27,7 @@ export default function CheckoutPage({ params }: CheckoutPageProps) {
   const planDetails = {
     individual: {
       title: "Stripe Individual Account Setup",
-      price: "$19.99",
+      price: "$39.99",
       features: [
         "Full verified USA Stripe account",
         "EIN Number & Verification Letter",
@@ -39,7 +39,7 @@ export default function CheckoutPage({ params }: CheckoutPageProps) {
     },
     business: {
       title: "Stripe Business Account Setup",
-      price: "$49.99",
+      price: "$119.99",
       features: [
         "Full verified USA Business Stripe account",
         "Legal company registration in the USA",

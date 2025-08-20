@@ -5,9 +5,9 @@ import { Check, CreditCard, Shield, Clock, Users } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Individual Stripe Account Setup - $19.99 | StripeGate",
+  title: "Individual Stripe Account Setup - $39.99 | StripeGate",
   description:
-    "Get your individual Stripe account set up in 3 days for just $19.99. Includes EIN number, Payoneer account, USA address & phone number. Perfect for freelancers and individual businesses.",
+    "Get your individual Stripe account set up in 3 days for just $39.99. Includes EIN number, Payoneer account, USA address & phone number. Perfect for freelancers and individual businesses.",
   keywords:
     "individual stripe account, stripe setup, freelancer payments, individual stripe account, stripe for non-supported countries",
   openGraph: {
@@ -63,7 +63,7 @@ export default function IndividualAccountPage() {
               Perfect for freelancers, consultants, and individual businesses who need to accept global payments
             </p>
             <div className="flex items-center justify-center gap-4 mb-8">
-              <span className="text-3xl font-bold text-primary">$19.99</span>
+              <span className="text-3xl font-bold text-primary">$39.99</span>
               <span className="text-gray-600">One-time payment</span>
             </div>
             <Link href="/checkout/individual">
@@ -138,11 +138,11 @@ export default function IndividualAccountPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/checkout/individual">
                 <Button className="bg-gradient-to-r from-primary to-purple-600 text-white text-lg px-8 py-6">
-                  Order Now - $19.99
+                  Order Now - $39.99
                 </Button>
               </Link>
               <Link href="/#contact">
-                <Button variant="outline" className="text-lg px-8 py-6">
+                <Button variant="outline" className="text-lg px-8 py-6 bg-transparent">
                   Have Questions?
                 </Button>
               </Link>

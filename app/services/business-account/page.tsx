@@ -5,7 +5,7 @@ import { Check, Building, CreditCard, Globe, Shield, Star } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Business Stripe Account Setup - $49.99 | StripeGate",
+  title: "Business Stripe Account Setup - $119.99 | StripeGate",
   description:
     "Complete business Stripe account setup with legal USA company registration, EIN number, business bank accounts, and more. 5-day delivery with lifetime support.",
   keywords:
@@ -62,7 +62,7 @@ export default function BusinessAccountPage() {
     { feature: "Business Address", individual: "Personal Address", business: "Business Address" },
     { feature: "EIN Number", individual: "✓", business: "✓" },
     { feature: "Setup Time", individual: "3 days", business: "5 days" },
-    { feature: "Price", individual: "$19.99", business: "$49.99" },
+    { feature: "Price", individual: "$39.99", business: "$119.99" },
   ]
 
   return (
@@ -78,7 +78,7 @@ export default function BusinessAccountPage() {
               Complete business solution with legal company registration, business banking, and full Stripe integration
             </p>
             <div className="flex items-center justify-center gap-4 mb-8">
-              <span className="text-3xl font-bold text-primary">$49.99</span>
+              <span className="text-3xl font-bold text-primary">$119.99</span>
               <span className="text-gray-600">One-time payment</span>
               <div className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Best Value</div>
             </div>
@@ -193,13 +193,13 @@ export default function BusinessAccountPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/checkout/business">
                 <Button className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-6">
-                  Order Now - $49.99
+                  Order Now - $119.99
                 </Button>
               </Link>
               <Link href="/#contact">
                 <Button
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6"
+                  className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6 bg-transparent"
                 >
                   Contact Sales
                 </Button>

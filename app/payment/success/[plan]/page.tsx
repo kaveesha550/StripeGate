@@ -19,14 +19,14 @@ export default function SuccessPage({ params }: SuccessPageProps) {
   const planDetails = {
     individual: {
       title: "Stripe Individual Account Setup",
-      price: "$19.99",
-      value: 19.99,
+      price: "$39.99",
+      value: 39.99,
       deliveryTime: "3 days",
     },
     business: {
       title: "Stripe Business Account Setup",
-      price: "$49.99",
-      value: 49.99,
+      price: "$119.99",
+      value: 119.99,
       deliveryTime: "5 days",
     },
   }
@@ -140,7 +140,7 @@ export default function SuccessPage({ params }: SuccessPageProps) {
                 </Link>
 
                 <Link href="/contact" className="w-full">
-                  <Button variant="outline" className="w-full">
+                  <Button variant="outline" className="w-full bg-transparent">
                     Contact Support
                   </Button>
                 </Link>

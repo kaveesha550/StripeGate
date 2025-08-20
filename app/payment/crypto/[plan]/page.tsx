@@ -31,11 +31,11 @@ export default function CryptoPaymentPage({ params }: CryptoPaymentPageProps) {
   const planDetails = {
     individual: {
       title: "Stripe Individual Account Setup",
-      price: 19.99,
+      price: 39.99,
     },
     business: {
       title: "Stripe Business Account Setup",
-      price: 49.99,
+      price: 119.99,
     },
   }
 
@@ -339,7 +339,7 @@ export default function CryptoPaymentPage({ params }: CryptoPaymentPageProps) {
                     If you're having trouble with your payment, please contact our support team.
                   </p>
                   <Link href="/#contact">
-                    <Button variant="outline" size="sm" className="w-full">
+                    <Button variant="outline" size="sm" className="w-full bg-transparent">
                       Contact Support
                     </Button>
                   </Link>
